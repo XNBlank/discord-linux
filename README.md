@@ -13,6 +13,7 @@ At the moment it is in a very simple state and will be updated frequently. If yo
 - Fix an issue with opening links inside Discord-Linux
 - Remember windows size/state
 - Add the ability to refresh (CTRL + R)
+- Add the ability to auto-start on system startup.
 
 ---
 
