@@ -7,6 +7,8 @@ Discord-Linux is a wrapper for [DiscordApp](http://discordapp.com/). This was ma
 
 At the moment it is in a very simple state and will be updated frequently. If you find any issues, write it up in the issues tab and I'll see what I can do. 
 
+
+### If you have any questions or need support, feel free to drop by the discord channel : https://discord.gg/0XKEBLSe6cdvBgWo
 ---
 
 ## TODO
