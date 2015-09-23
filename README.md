@@ -1,7 +1,9 @@
 # Discord-Linux
 ## A node-webkit wrapper for DiscordApp
 
-Discord-Linux is a nodewebkit wrapper for DiscordApp. This was made for those who would like to run Discord under it's own program on Linux. There are two different flavours of Discord-Linux; x86 (32bit) and x64 (64bit).
+![DiscordApp](https://discordapp.com/assets/df21d1b0c082d8a3cce1c43b290614f9.png)
+
+Discord-Linux is a wrapper for [DiscordApp](http://discordapp.com/). This was made for those who would like to run Discord under it's own program on Linux. There are two different flavours of Discord-Linux; x86 (32bit) and x64 (64bit).
 
 At the moment it is in a very simple state and will be updated frequently. If you find any issues, write it up in the issues tab and I'll see what I can do. 
 
