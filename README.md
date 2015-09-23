@@ -33,7 +33,7 @@ At the moment it is in a very simple state and will be updated frequently. If yo
 ### Please delete your old Discord Linux folder and replace it with this update.
 
 > 32bit Version
-[Download](https://github.com/XNBlank/discord-linux/releases/download/x86-0.1.0/discord-linux-x32.tar.gz "Download the 32bit version") 
+[Download](https://github.com/XNBlank/discord-linux/releases/download/x86-0.1.0/discord-linux-ia32.tar.gz "Download the 32bit version") 
 
 > 64bit Version
 [Download](https://github.com/XNBlank/discord-linux/releases/download/x64-0.1.0/discord-linux-x64.tar.gz "Download the 64bit version") 
