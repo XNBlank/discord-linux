@@ -9,10 +9,10 @@ At the moment it is in a very simple state and will be updated frequently. If yo
 
 ## TODO
 
-- Add a taskbar icon for notices, management, etc
+- ~~Add a taskbar icon for notices, management, etc~~
 - Fix an issue with opening links inside Discord-Linux
 - Remember windows size/state
-- Add the ability to refresh (CTRL + R)
+- ~~Add the ability to refresh (CTRL + R)~~
 - Add the ability to auto-start on system startup.
 
 ---
