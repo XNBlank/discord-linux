@@ -8,16 +8,12 @@ Discord-Linux is a wrapper for [DiscordApp](http://discordapp.com/). This was ma
 At the moment it is in a very simple state and will be updated frequently. If you find any issues, write it up in the issues tab and I'll see what I can do. 
 
 
-### If you have any questions or need support, feel free to drop by the discord channel : https://discord.gg/0XKEBLSe6cdvBgWo
+### If you have any questions or need support, feel free to drop by the Discord channel : https://discord.gg/0XKEBLSe6cdvBgWo
 ---
 
 ## TODO
 
-- ~~Add a taskbar icon for notices, management, etc~~
-- ~~Fix an issue with opening links inside Discord-Linux~~
-- ~~Remember windows size/state~~
-- ~~Add the ability to refresh (CTRL + R)~~
-
+**Nothing**. If you have a suggestion, feel free to drop by the Discord channel and voice it!
 ---
 
 ## Downloads
@@ -26,7 +22,7 @@ At the moment it is in a very simple state and will be updated frequently. If yo
 - Added a tray icon with menu, which can be accessed by right clicking.
 - Added Minimize to taskbar option. Default to off. You can change this in the tray icon menu if you wish.
 - Added the ability to refresh Discord, whether it be from the tray or by pressing "CTRL+R" in the window.
-- Links no longer open mini Discord windows, and open up the users default web browser.
+- Links no longer open mini Discord windows, but instead open up the users default web browser.
 - Window size, state, and position are now saved, and will be set to how you had it from your last session.
 - Moved from Node-Webkit to Electron api. Stability improves!
 
@@ -37,7 +33,3 @@ At the moment it is in a very simple state and will be updated frequently. If yo
 
 > 64bit Version
 [Download](https://github.com/XNBlank/discord-linux/releases/download/x64-0.1.0/discord-linux-x64.tar.gz "Download the 64bit version") 
-
----
-
-Please note that, at the moment, the source code is not uploaded. I will upload it asap. (There isn't much to look at right now though.)
