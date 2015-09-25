@@ -1,5 +1,5 @@
 # Discord-Linux
-## An electron wrapper for DiscordApp
+## An electron wrapper for DiscordApp!
 
 ![DiscordApp](https://discordapp.com/assets/df21d1b0c082d8a3cce1c43b290614f9.png)
 
