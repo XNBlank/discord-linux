@@ -18,17 +18,15 @@ At the moment it is in a very simple state and will be updated frequently. If yo
 
 ## Downloads
 
-## Changelog 0.1-0
-- Added a tray icon with menu, which can be accessed by right clicking.
-- Added Minimize to taskbar option. Default to off. You can change this in the tray icon menu if you wish.
-- Added the ability to refresh Discord, whether it be from the tray or by pressing "CTRL+R" in the window.
-- Links no longer open mini Discord windows, but instead open up the users default web browser.
-- Window size, state, and position are now saved, and will be set to how you had it from your last session.
-- Moved from Node-Webkit to Electron api. Stability improves!
+## Changelog 0.1-1
+- Fixed refresh bug
+- Stabilized program more
+- Cleaned up code, removed unnecessary elements.
+- (Hopefully) fixed missing icon.
+- (Hopefully) fixed missing tray icon on some OS's
 
 ### Please delete your old Discord Linux folder and replace it with this update.
 
+<a href="https://github.com/XNBlank/discord-linux/releases/download/x86-0.1.1/discordlinux_0.1-1-ia32.deb"><img src="http://i.imgur.com/1AXUERm.png"></a> <a href="https://github.com/XNBlank/discord-linux/releases/download/x64-0.1.1/discordlinux_0.1-1-amd64.deb"><img src="http://i.imgur.com/mnREvcr.png"></a>
 
-<a href="https://github.com/XNBlank/discord-linux/releases/download/x86-0.1.0/i386_discordlinux_0.1-0.deb"><img src="http://i.imgur.com/1AXUERm.png"></a> <a href="https://github.com/XNBlank/discord-linux/releases/download/x64-0.1.0/amd64_discordlinux_0.1-0.deb"><img src="http://i.imgur.com/mnREvcr.png"></a>
-
-<a href="https://github.com/XNBlank/discord-linux/releases/download/x86-0.1.0/discord-linux-ia32.tar.gz"><img src="http://i.imgur.com/ffAMbEr.png"></a> <a href="https://github.com/XNBlank/discord-linux/releases/download/x64-0.1.0/discord-linux-x64.tar.gz"><img src="http://i.imgur.com/ZgjJZ2E.png"></a>
+<a href="https://github.com/XNBlank/discord-linux/archive/x86-0.1.1.tar.gz"><img src="http://i.imgur.com/ffAMbEr.png"></a> <a href="https://github.com/XNBlank/discord-linux/archive/x64-0.1.1.tar.gz"><img src="http://i.imgur.com/ZgjJZ2E.png"></a>
