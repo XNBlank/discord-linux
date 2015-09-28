@@ -29,8 +29,8 @@ A : **Unfortunately, Discord-Linux is just a wrapper, which means it will act li
 ## Downloads
 
 ## Changelog 0.1-1
-- Fixed refresh bug
-- Stabilized program more
+- Fixed refresh bug.
+- Stabilized program more.
 - Cleaned up code, removed unnecessary elements.
 - (Hopefully) fixed missing icon.
 - (Hopefully) fixed missing tray icon on some OS's
