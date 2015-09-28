@@ -16,6 +16,16 @@ At the moment it is in a very simple state and will be updated frequently. If yo
 **Nothing**. If you have a suggestion, feel free to drop by the Discord channel and voice it!
 ---
 
+## FAQ
+
+Q : Why am I not getting notices from mentions, messages, etc?
+
+A : **Make sure you check your settings and enable notices. Most of the time, on first startup, notices are turned off by default.**
+
+Q : How come Push to Talk doesn't work?
+
+A : **Unfortunately, Discord-Linux is just a wrapper, which means it will act like the web version of Discord. So that means no full Push to Talk support. Sorry.**
+
 ## Downloads
 
 ## Changelog 0.1-1
