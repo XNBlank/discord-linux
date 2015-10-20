@@ -37,6 +37,13 @@ A : **Unfortunately, Discord-Linux is just a wrapper, which means it will act li
 
 ### Please delete your old Discord Linux folder and replace it with this update.
 
+## Debian
 <a href="https://github.com/XNBlank/discord-linux/releases/download/x86-0.1.1/discordlinux_0.1-1-ia32.deb"><img src="http://i.imgur.com/1AXUERm.png"></a> <a href="https://github.com/XNBlank/discord-linux/releases/download/x64-0.1.1/discordlinux_0.1-1-amd64.deb"><img src="http://i.imgur.com/mnREvcr.png"></a>
+
+## Arch
+
+<a href="https://aur.archlinux.org/packages/discord/">Aur Repository</a>
+(Thanks rockneurotiko)
+## Source
 
 <a href="https://github.com/XNBlank/discord-linux/archive/x86-0.1.1.tar.gz"><img src="http://i.imgur.com/ffAMbEr.png"></a> <a href="https://github.com/XNBlank/discord-linux/archive/x64-0.1.1.tar.gz"><img src="http://i.imgur.com/ZgjJZ2E.png"></a>
