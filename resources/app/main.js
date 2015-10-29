@@ -22,6 +22,7 @@ var minToTray;
 minToTray = data.minTray;
 
 var updateReady = false;
+var quitForReal = false; // Dirty
 
 app.commandLine.appendSwitch('client-certificate', 'file://' + __dirname + '/assets/comodorsaaddtrustca.crt');
 app.commandLine.appendSwitch('ignore-certificate-errors');
@@ -75,8 +76,8 @@ app.on('ready', function() {
         label: 'Show Discord',
         type: 'normal',
         click: function() {
-            mainWindow.setBounds(data.bounds);
-            mainWindow.restore(); mainWindow.setSkipTaskbar(false);
+			mainWindow.setSkipTaskbar(false);
+            mainWindow.show();
         }
     });
 
@@ -84,7 +85,7 @@ app.on('ready', function() {
     var disMinButton = new MenuItem({
       label: 'Disable Minimize to Tray',
       type: 'checkbox',
-      checked: true,
+      checked: !minToTray,
       click: function() {
         if(disMinButton.checked == true){
           minToTray = false;
@@ -94,24 +95,17 @@ app.on('ready', function() {
           console.log("Enabled MinToTray");
         }
 
-        if(minToTray == false){
-          disMinButton.checked = true;
-        }
-        else if(minToTray == true){
-          disMinButton.checked = false;
-        }
+		disMinButton.checked = !minToTray;
 
       }
     });
 
-    mainWindow.on('minimize', function() {
-        //showButton.enabled = true;
-        var data = {
-            bounds: mainWindow.getBounds(),
-            minTray: minToTray
-        };
-        if(minToTray == true){
-        mainWindow.setSkipTaskbar(true);
+    mainWindow.on('close', function(event) {
+        if(minToTray && !quitForReal){
+			event.preventDefault();
+			data.bounds = mainWindow.getBounds();
+			mainWindow.hide();
+        	mainWindow.setSkipTaskbar(true);
         }
     });
 
@@ -124,11 +118,16 @@ app.on('ready', function() {
     menu.append(new MenuItem({ type: 'separator' }));
     menu.append(disMinButton);
     menu.append(new MenuItem({ type: 'separator' }));
-    menu.append(new MenuItem({ label: 'Quit Discord', type: 'normal', click: function() { app.quit(); } }));
+    menu.append(new MenuItem({ label: 'Quit Discord', type: 'normal', click: function() { quitForReal = true; app.quit(); } }));
 
     appIcon = new Tray(__dirname + '/tray.png');
     appIcon.setToolTip('Discord');
     appIcon.setContextMenu(menu);
+
+	appIcon.on('clicked', function(event){
+		mainWindow.setSkipTaskbar(false);
+		mainWindow.show();
+	});
 
     //Link fix
     webContents.on('new-window', function(event, urlToOpen) {
