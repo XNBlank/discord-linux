@@ -138,14 +138,14 @@ app.on('ready', function() {
 
     //Allow refreshing and Show Window
     mainWindow.on('focus', function(){
-        showButton.enabled = false;
+        //showButton.enabled = false;
         globalShortcut.register('ctrl+r', function () {
             mainWindow.reload();
         });
     });
     //Disable refresh when not in focus.
     mainWindow.on('blur', function(){
-        showButton.enabled = true;
+        //showButton.enabled = true;
         globalShortcut.unregister('ctrl+r');
     });
 
