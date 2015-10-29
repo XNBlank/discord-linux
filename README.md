@@ -33,6 +33,8 @@ A : **Unfortunately, Discord-Linux is just a wrapper, which means it will act li
 - Fixed graphical glitch after DiscordApp update causing the Light Theme to look really odd. (Thanks @jacobmischka )
 - Added **true** minimize to tray support. (Thanks @jacobmischka again~)
 - Added support for HighDPI screens. (Thanks @NathanielMichael )
+
+
 ## Changelog 0.1-1
 - Fixed refresh bug.
 - Stabilized program more.
