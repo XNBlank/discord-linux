@@ -112,7 +112,8 @@ app.on('ready', function() {
 
     //Tray Menu
     //menu.append(new MenuItem({ label: 'Show Discord', type: 'normal', click: function() { mainWindow.restore(); mainWindow.setSkipTaskbar(false); } }));
-    menu.append(showButton);
+    //menu.append(showButton); - Depricated. Doesn't work in Ubuntu Unity
+    menu.append(new MenuItem({label: 'Show Discord', type: 'normal', click: function(){ mainWindow.setSkipTaskbar(false); mainWindow.show(); } }));
     menu.append(new MenuItem({ type: 'separator' }));
     menu.append(new MenuItem({ label: 'Refresh Discord', type: 'normal', click: function(){ mainWindow.reload(); } }));
     menu.append(new MenuItem({ type: 'separator' }));
