@@ -55,4 +55,4 @@ A : **Unfortunately, Discord-Linux is just a wrapper, which means it will act li
 (Thanks rockneurotiko)
 ## Source
 
-<a href="https://github.com/XNBlank/discord-linux/archive/x86-0.1.2.tar.gz"><img src="http://i.imgur.com/ffAMbEr.png"></a> <a href="https://github.com/XNBlank/discord-linux/archive/x64-0.1.2.tar.gz"><img src="http://i.imgur.com/ZgjJZ2E.png"></a>
+<a href="https://github.com/XNBlank/discord-linux/archive/x86-0.1.3.tar.gz"><img src="http://i.imgur.com/ffAMbEr.png"></a> <a href="https://github.com/XNBlank/discord-linux/archive/x64-0.1.3.tar.gz"><img src="http://i.imgur.com/ZgjJZ2E.png"></a>
