@@ -28,14 +28,16 @@ A : **Unfortunately, Discord-Linux is just a wrapper, which means it will act li
 
 ## Downloads
 
+## Changelog 0.1-3
+- CRITICAL UPDATE : iframe replaced with webview, due to new x-frame-options set on the domain for http://discordapp.com/login/ (Thanks for the help @jacobmischka )
 
-## Changelog 0.1-2
+### Changelog 0.1-2
 - Fixed graphical glitch after DiscordApp update causing the Light Theme to look really odd. (Thanks @jacobmischka )
 - Added **true** minimize to tray support. (Thanks @jacobmischka again~)
 - Added support for HighDPI screens. (Thanks @NathanielMichael )
 
 
-## Changelog 0.1-1
+### Changelog 0.1-1
 - Fixed refresh bug.
 - Stabilized program more.
 - Cleaned up code, removed unnecessary elements.
@@ -45,7 +47,7 @@ A : **Unfortunately, Discord-Linux is just a wrapper, which means it will act li
 ### Please delete your old Discord Linux folder and replace it with this update.
 
 ## Debian
-<a href="https://github.com/XNBlank/discord-linux/releases/download/x86-0.1.2/discordlinux-ia32.deb"><img src="http://i.imgur.com/1AXUERm.png"></a> <a href="https://github.com/XNBlank/discord-linux/releases/download/x64-0.1.2/discordlinux-x64.deb"><img src="http://i.imgur.com/mnREvcr.png"></a>
+<a href="https://github.com/XNBlank/discord-linux/releases/download/x86-0.1.3/discordlinux-ia32.deb"><img src="http://i.imgur.com/1AXUERm.png"></a> <a href="https://github.com/XNBlank/discord-linux/releases/download/x64-0.1.3/discordlinux-x64.deb"><img src="http://i.imgur.com/mnREvcr.png"></a>
 
 ## Arch
 
