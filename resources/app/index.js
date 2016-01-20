@@ -1,5 +1,5 @@
 var plugins = require('electron-plugins'),
-    ipc = require('ipc')
+    ipc = require('electron').ipcMain
 
 document.addEventListener('DOMContentLoaded', function () {
     var context = { document: document }

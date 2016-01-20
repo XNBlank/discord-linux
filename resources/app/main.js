@@ -3,18 +3,22 @@ var BrowserWindow = require('browser-window');
 var Menu = require('menu');
 var MenuItem = require('menu-item');
 var Tray = require('tray');
-var ipc = require('ipc')
+var ipc = require('electron').ipcMain
 var globalShortcut = require('global-shortcut');
 var shell = require('shell');
 var path = require("path");
 var fs = require("fs");
-var initPath = path.join(app.getAppPath(), "init.json");
+var initPath = path.join(app.getPath("userData"), "init.json");
 var data;
 var dialog = require('dialog');
 try {
-data = JSON.parse(fs.readFileSync(initPath, 'utf8'));
+	data = JSON.parse(fs.readFileSync(initPath, 'utf8'));
 }
-catch(e) {
+catch(e){
+	data = {
+		"bounds": {"x":100, "y":100, "width":1024,"height":768},
+		"minTray":false
+	};
 }
 
 var menu = new Menu();
@@ -39,7 +43,7 @@ app.on('ready', function() {
     updateWindow.setResizable(false);
     updateWindow.setAlwaysOnTop(true);
     updateWindow.setSkipTaskbar(true);
-    updateWindow.loadUrl('file://' + __dirname + '/update.html');
+    updateWindow.loadURL('file://' + __dirname + '/update.html');
 
     //When no updates
 
@@ -52,7 +56,7 @@ app.on('ready', function() {
     updateWindow.close();
     mainWindow.setTitle("Discord");
     mainWindow.setMenuBarVisibility(false);
-    mainWindow.loadUrl('file://' + __dirname + '/index.html');
+    mainWindow.loadURL('file://' + __dirname + '/index.html');
 
     //Nullify any closed windows.
     mainWindow.on('closed', function() {
