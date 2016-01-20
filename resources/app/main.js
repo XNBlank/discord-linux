@@ -129,7 +129,7 @@ app.on('ready', function() {
     appIcon.setToolTip('Discord');
     appIcon.setContextMenu(menu);
 
-	appIcon.on('clicked', function(event){
+	appIcon.on('click', function(event){
 		mainWindow.setSkipTaskbar(false);
 		mainWindow.show();
 	});
