@@ -30,7 +30,14 @@ A : **Unfortunately, Discord-Linux is just a wrapper, which means it will act li
 
 ## Downloads
 
-## Changelog 0.1-3
+##Changelog 0.1-4
+- Updated to upstream version of Electron.
+- Small tweaks in code.
+- Config is saved to userdata folders now.
+
+Please note that the .DEB files below are not up to date. If you are on debian and wish to update, please download the source file and overwrite your old installation.
+
+### Changelog 0.1-3
 - CRITICAL UPDATE : iframe replaced with webview, due to new x-frame-options set on the domain for http://discordapp.com/login/ (Thanks for the help @jacobmischka )
 
 ### Changelog 0.1-2
@@ -48,7 +55,7 @@ A : **Unfortunately, Discord-Linux is just a wrapper, which means it will act li
 
 ### Please delete your old Discord Linux folder and replace it with this update.
 
-## Debian
+## Debian (0.1-3)
 <a href="https://github.com/XNBlank/discord-linux/releases/download/x86-0.1.3/discordlinux-ia32.deb"><img src="http://i.imgur.com/1AXUERm.png"></a> <a href="https://github.com/XNBlank/discord-linux/releases/download/x64-0.1.3/discordlinux-x64.deb"><img src="http://i.imgur.com/mnREvcr.png"></a>
 
 ## Arch
@@ -57,4 +64,4 @@ A : **Unfortunately, Discord-Linux is just a wrapper, which means it will act li
 (Thanks rockneurotiko)
 ## Source
 
-<a href="https://github.com/XNBlank/discord-linux/archive/x86-0.1.3.tar.gz"><img src="http://i.imgur.com/ffAMbEr.png"></a> <a href="https://github.com/XNBlank/discord-linux/archive/x64-0.1.3.tar.gz"><img src="http://i.imgur.com/ZgjJZ2E.png"></a>
+<a href="https://github.com/XNBlank/discord-linux/archive/x86-0.1.4.tar.gz"><img src="http://i.imgur.com/ffAMbEr.png"></a> <a href="https://github.com/XNBlank/discord-linux/archive/x64-0.1.4.tar.gz"><img src="http://i.imgur.com/ZgjJZ2E.png"></a>
