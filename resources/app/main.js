@@ -153,5 +153,8 @@ app.on('ready', function() {
         globalShortcut.unregister('ctrl+r');
     });
 
+	mainWindow.webContents.on('will-navigate', function(event){
+		event.preventDefault();
+	});
 
 });
