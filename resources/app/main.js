@@ -17,14 +17,16 @@ try {
 catch(e){
 	data = {
 		"bounds": {"x":100, "y":100, "width":1024,"height":768},
-		"minTray":false
+		"minTray":false,
+		"useCSS":false
 	};
 }
 
 var menu = new Menu();
 var minToTray;
+var useCustomCSS;
 minToTray = data.minTray;
-
+useCustomCSS = data.useCSS;
 var updateReady = false;
 var quitForReal = false; // Dirty
 
@@ -69,8 +71,9 @@ app.on('ready', function() {
     //Save settings when app is closed.
     mainWindow.on('close', function(){
         var data = {
-            bounds: mainWindow.getBounds(),
-            minTray: minToTray
+					bounds: mainWindow.getBounds(),
+					minTray: minToTray,
+					useCSS: useCustomCSS
         };
         fs.writeFileSync(initPath, JSON.stringify(data));
     });
@@ -104,6 +107,25 @@ app.on('ready', function() {
       }
     });
 
+		//Toggle CSS (Only works on some OSs?)
+			var toggleCSS = new MenuItem({
+				label: 'Use Custom CSS',
+				type: 'checkbox',
+				checked: useCustomCSS,
+				click: function() {
+					if(toggleCSS.checked == true){
+						useCustomCSS = true;
+						console.log("Disabled useCustomCSS");
+					} else if (toggleCSS.checked == false) {
+						useCustomCSS = false;
+						console.log("Enabled useCustomCSS");
+					}
+	
+			toggleCSS.checked = useCustomCSS;
+	
+				}
+			});
+
     mainWindow.on('close', function(event) {
         if(minToTray && !quitForReal){
 			event.preventDefault();
@@ -122,6 +144,7 @@ app.on('ready', function() {
     menu.append(new MenuItem({ label: 'Refresh Discord', type: 'normal', click: function(){ mainWindow.reload(); } }));
     menu.append(new MenuItem({ type: 'separator' }));
     menu.append(disMinButton);
+		menu.append(toggleCSS);
     menu.append(new MenuItem({ type: 'separator' }));
     menu.append(new MenuItem({ label: 'Quit Discord', type: 'normal', click: function() { quitForReal = true; app.quit(); } }));
 
