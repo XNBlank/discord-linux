@@ -42,7 +42,7 @@ You are able to disable your css theme using the tray icon menu, which now has a
 For a starter theme, here is one made by a Discord-Linux user that goes by the name of Tenshin.
 http://hastebin.com/ubabuhagor.css
 
-#Changelog 0.1-4
+###Changelog 0.1-4
 - Updated to upstream version of Electron.
 - Small tweaks in code.
 - Config is saved to userdata folders now.
