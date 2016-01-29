@@ -30,7 +30,19 @@ A : **Unfortunately, Discord-Linux is just a wrapper, which means it will act li
 
 ## Downloads
 
-##Changelog 0.1-4
+##Changelog 0.1-5
+Ability to add a custom CSS theme is now possible! Now you can customize Discord to how you would like to see it, whether to have it fit the theme of your desktop, or to make it more translucent. The sky is the limit!
+
+**Few things to note about using a Custom CSS.**
+- 1 ) the CSS must use !important on every line.
+- 2 ) the injected CSS is located in the same dir as the `init.json` (`~/.config/Discord/user.css`) and must be named `user.css`
+
+You are able to disable your css theme using the tray icon menu, which now has a toggle option for it.
+
+For a starter theme, here is one made by a Discord-Linux user that goes by the name of Tenshin.
+http://hastebin.com/ubabuhagor.css
+
+#Changelog 0.1-4
 - Updated to upstream version of Electron.
 - Small tweaks in code.
 - Config is saved to userdata folders now.
@@ -64,4 +76,4 @@ Please note that the .DEB files below are not up to date. If you are on debian a
 (Thanks rockneurotiko)
 ## Source
 
-<a href="https://github.com/XNBlank/discord-linux/archive/x86-0.1.4.tar.gz"><img src="http://i.imgur.com/ffAMbEr.png"></a> <a href="https://github.com/XNBlank/discord-linux/archive/x64-0.1.4.tar.gz"><img src="http://i.imgur.com/ZgjJZ2E.png"></a>
+<a href="https://github.com/XNBlank/discord-linux/archive/x86-0.1.5.tar.gz"><img src="http://i.imgur.com/ffAMbEr.png"></a> <a href="https://github.com/XNBlank/discord-linux/archive/x64-0.1.5.tar.gz"><img src="http://i.imgur.com/ZgjJZ2E.png"></a>
