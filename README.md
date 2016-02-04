@@ -26,7 +26,15 @@ A : **Make sure you check your settings and enable notices. Most of the time, on
 
 Q : How come Push to Talk doesn't work?
 
-A : **Unfortunately, Discord-Linux is just a wrapper, which means it will act like the web version of Discord. So that means no full Push to Talk support. Sorry.**
+A : **Unfortunately, Discord-Linux isn't as full featured as official clients, which means it will mostly act like the web version of Discord. So that means no full Push to Talk support. YET. I have been working on ways to implement full PTT support. Stay tuned for updates on this.**
+
+Q : How do I make / enable custom themes?
+
+A : ** Few things to note about using a Custom CSS.
+- 1 ) the CSS must use !important on every line.
+- 2 ) the injected CSS is located in the same dir as the `init.json` (`~/.config/Discord/user.css`) and must be named `user.css`
+
+You are able to disable your css theme using the tray icon menu, which now has a toggle option for it. **
 
 ## Downloads
 
