@@ -30,11 +30,13 @@ A : **Unfortunately, Discord-Linux isn't as full featured as official clients, w
 
 Q : How do I make / enable custom themes?
 
-A : ** Few things to note about using a Custom CSS.
-- 1 ) the CSS must use !important on every line.
-- 2 ) the injected CSS is located in the same dir as the `init.json` (`~/.config/Discord/user.css`) and must be named `user.css`
+A : **Few things to note about using a Custom CSS.**
 
-You are able to disable your css theme using the tray icon menu, which now has a toggle option for it. **
+**- 1 ) the CSS must use !important on every line.**
+
+**- 2 ) the injected CSS is located in the same dir as the `init.json` (`~/.config/Discord/user.css`) and must be named `user.css`**
+
+**You are able to disable your css theme using the tray icon menu, which now has a toggle option for it.**
 
 ## Downloads
 
