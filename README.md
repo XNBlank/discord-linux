@@ -26,7 +26,17 @@ A : **Make sure you check your settings and enable notices. Most of the time, on
 
 Q : How come Push to Talk doesn't work?
 
-A : **Unfortunately, Discord-Linux is just a wrapper, which means it will act like the web version of Discord. So that means no full Push to Talk support. Sorry.**
+A : **Unfortunately, Discord-Linux isn't as full featured as official clients, which means it will mostly act like the web version of Discord. So that means no full Push to Talk support. YET. I have been working on ways to implement full PTT support. Stay tuned for updates on this.**
+
+Q : How do I make / enable custom themes?
+
+A : **Few things to note about using a Custom CSS.**
+
+**- 1 ) the CSS must use !important on every line.**
+
+**- 2 ) the injected CSS is located in the same dir as the `init.json` (`~/.config/Discord/user.css`) and must be named `user.css`**
+
+**You are able to disable your css theme using the tray icon menu, which now has a toggle option for it.**
 
 ## Downloads
 
@@ -40,7 +50,7 @@ Ability to add a custom CSS theme is now possible! Now you can customize Discord
 You are able to disable your css theme using the tray icon menu, which now has a toggle option for it.
 
 For a starter theme, here is one made by a Discord-Linux user that goes by the name of Tenshin.
-http://hastebin.com/ubabuhagor.css
+http://hastebin.com/raw/azowaciwit
 
 ###Changelog 0.1-4
 - Updated to upstream version of Electron.
@@ -67,8 +77,8 @@ Please note that the .DEB files below are not up to date. If you are on debian a
 
 ### Please delete your old Discord Linux folder and replace it with this update.
 
-## Debian (0.1-3)
-<a href="https://github.com/XNBlank/discord-linux/releases/download/x86-0.1.3/discordlinux-ia32.deb"><img src="http://i.imgur.com/1AXUERm.png"></a> <a href="https://github.com/XNBlank/discord-linux/releases/download/x64-0.1.3/discordlinux-x64.deb"><img src="http://i.imgur.com/mnREvcr.png"></a>
+## Debian
+Download the TAR file below and extract to a directory of your choice. No need to build or make. Just run the discord application.
 
 ## Arch
 
