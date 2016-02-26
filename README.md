@@ -77,8 +77,8 @@ Please note that the .DEB files below are not up to date. If you are on debian a
 
 ### Please delete your old Discord Linux folder and replace it with this update.
 
-## Debian (0.1-3)
-<a href="https://github.com/XNBlank/discord-linux/releases/download/x86-0.1.3/discordlinux-ia32.deb"><img src="http://i.imgur.com/1AXUERm.png"></a> <a href="https://github.com/XNBlank/discord-linux/releases/download/x64-0.1.3/discordlinux-x64.deb"><img src="http://i.imgur.com/mnREvcr.png"></a>
+## Debian
+Download the TAR file below and extract to a directory of your choice. No need to build or make. Just run the discord application.
 
 ## Arch
 
