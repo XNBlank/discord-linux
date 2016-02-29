@@ -39,6 +39,7 @@
 			if (customcss != "" && toggleCSS == true) {
 				webview.insertCSS(customcss);
 			}
+			window.dispatchEvent(new Event("resize"));
 		});
 
 		webview.addEventListener("new-window", function(event) {
