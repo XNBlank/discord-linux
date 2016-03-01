@@ -3,7 +3,7 @@ var BrowserWindow = require('browser-window');
 var Menu = require('menu');
 var MenuItem = require('menu-item');
 var Tray = require('tray');
-var ipc = require('electron').ipcMain
+var ipc = require('electron').ipcMain;
 var globalShortcut = require('global-shortcut');
 var shell = require('shell');
 var path = require("path");
@@ -120,9 +120,7 @@ app.on('ready', function() {
 						useCustomCSS = false;
 						console.log("Enabled useCustomCSS");
 					}
-	
-			toggleCSS.checked = useCustomCSS;
-	
+					toggleCSS.checked = useCustomCSS;
 				}
 			});
 
