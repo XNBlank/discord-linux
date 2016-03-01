@@ -1,8 +1,10 @@
 (function() {
-
+	var remote = require("remote");
+	var app = remote.require("app");
 	var fs = require("fs");
 	var shell = require("shell");
-
+	var ipc = require("electron").ipcRenderer;
+	var path = require("path");
 	var initPath = path.join(app.getPath("userData"), "init.json");
 	var data;
 	try {
