@@ -1,8 +1,10 @@
 (function() {
-
+	var remote = require("remote");
+	var app = remote.require("app");
 	var fs = require("fs");
 	var shell = require("shell");
-
+	var ipc = require("electron").ipcRenderer;
+	var path = require("path");
 	var initPath = path.join(app.getPath("userData"), "init.json");
 	var data;
 	try {
@@ -20,8 +22,7 @@
 		};
 	}
 
-	var toggleCSS;
-	toggleCSS = data.useCSS;
+	var toggleCSS = data.useCSS;
 
 	onload = function() {
 		var customcss = "";
@@ -39,13 +40,13 @@
 			if (customcss != "" && toggleCSS == true) {
 				webview.insertCSS(customcss);
 			}
-			window.dispatchEvent(new Event("resize"));
 		});
 
 		webview.addEventListener("new-window", function(event) {
 			console.log(event.url);
 			shell.openExternal(event.url);
 		});
-
 	};
+
+	ipc.send("resize-onload");
 })();
