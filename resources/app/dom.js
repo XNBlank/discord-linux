@@ -1,42 +1,52 @@
-(function(){
-
-  var fs = require("fs");
-  var shell = require("shell");
-
-  var datapath = process.env.HOME + "/.config/Discord/init.json";
-  var data;
-  try{
-    data = JSON.parse(fs.readFileSync(datapath, 'utf-8'));
-  } catch(e){
-    alert("Error loading init.json." + e);
-  }
-
-  var toggleCSS;
-  toggleCSS = data.useCSS;
-  //alert("Using CSS?" + toggleCSS);
-
-  onload = function(){
-      //alert(csspath);
-      var customcss = "";
-      var webview = document.getElementById("discord-webview");
-      if(toggleCSS == true){
-        var csspath = process.env.HOME + "/.config/Discord/user.css";
-	fs.readFile(csspath, 'utf-8', function(err,data){
-	  if (err) {alert(err);}
-	  customcss = data;
-	});
-      }
-      webview.addEventListener("dom-ready", function(event){
-	//webview.openDevTools();
-	if(customcss != "" && toggleCSS == true){
-	  webview.insertCSS(customcss);
+(function() {
+	var remote = require("remote");
+	var app = remote.require("app");
+	var fs = require("fs");
+	var shell = require("shell");
+	var ipc = require("electron").ipcRenderer;
+	var path = require("path");
+	var initPath = path.join(app.getPath("userData"), "init.json");
+	var data;
+	try {
+		data = JSON.parse(fs.readFileSync(datapath, 'utf-8'));
+	} catch (e) {
+		data = {
+			"bounds": {
+				"x": 100,
+				"y": 100,
+				"width": 1024,
+				"height": 768
+			},
+			"minTray": false,
+			"useCSS": false
+		};
 	}
-      });
 
-      webview.addEventListener("new-window", function(event){
-          console.log(event.url);
-          shell.openExternal(event.url);
-      });
+	var toggleCSS = data.useCSS;
 
-  };
+	onload = function() {
+		var customcss = "";
+		var webview = document.getElementById("discord-webview");
+		if (toggleCSS == true) {
+			var csspath = process.env.HOME + "/.config/Discord/user.css";
+			fs.readFile(csspath, 'utf-8', function(err, data) {
+				if (err) {
+					alert(err);
+				}
+				customcss = data;
+			});
+		}
+		webview.addEventListener("dom-ready", function(event) {
+			if (customcss != "" && toggleCSS == true) {
+				webview.insertCSS(customcss);
+			}
+		});
+
+		webview.addEventListener("new-window", function(event) {
+			console.log(event.url);
+			shell.openExternal(event.url);
+		});
+	};
+
+	ipc.send("resize-onload");
 })();
