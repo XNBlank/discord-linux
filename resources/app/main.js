@@ -71,8 +71,6 @@ app.on('ready', function() {
     mainWindow.setMenuBarVisibility(false);
     mainWindow.loadURL('file://' + __dirname + '/index.html');
 
-      
-
 
     //Nullify any closed windows.
     mainWindow.on('closed', function() {
@@ -85,11 +83,11 @@ app.on('ready', function() {
     //Save settings when app is closed.
     mainWindow.on('close', function(){
         var data = {
-					bounds: mainWindow.getBounds(),
-					minTray: minToTray,
-					useCSS: useCustomCSS,
-					isPTB: usePTB,
-					isCanary: useCanary
+		bounds: mainWindow.getBounds(),
+		minTray: minToTray,
+		useCSS: useCustomCSS,
+		isPTB: usePTB,
+		isCanary: useCanary
         };
         fs.writeFileSync(initPath, JSON.stringify(data));
     });
