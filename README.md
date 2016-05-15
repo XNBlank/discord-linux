@@ -1,3 +1,8 @@
+# Discord-Linux has been deprecated
+**Please use the official Linux Discord client.**
+
+[Canary announcement](https://www.reddit.com/r/discordapp/comments/4bu7lm/discord_linux_very_experimental_canary_release/)
+
 # Discord-Linux
 ## An electron wrapper for DiscordApp!
 
