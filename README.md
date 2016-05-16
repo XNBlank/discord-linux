@@ -1,14 +1,12 @@
 # Discord-Linux has been deprecated
-**Please use the official Linux Discord client.**
+**Please use the official Linux Discord client for full features such as Push To Talk and Game Detection.**
+I will still be offering support for this version, but don't be expecting updates. If you wish to continue using custom CSS, and do not care about PTT or Game Detection, continue using Discord-Linux.
+
 
 [Canary announcement](https://www.reddit.com/r/discordapp/comments/4bu7lm/discord_linux_very_experimental_canary_release/)
 
 # Discord-Linux
 ## An electron wrapper for DiscordApp!
-
-
-
-![DiscordApp](https://discordapp.com/assets/df21d1b0c082d8a3cce1c43b290614f9.png)
 
 Discord-Linux is a wrapper for [DiscordApp](http://discordapp.com/). This was made for those who would like to run Discord under it's own program on Linux. There are two different flavours of Discord-Linux; x86 (32bit) and x64 (64bit).
 
