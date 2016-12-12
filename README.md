@@ -1,6 +1,5 @@
 # Discord-Linux has been deprecated
 **Please use the official Linux Discord client for full features such as Push To Talk and Game Detection.**
-I will still be offering support for this version, but don't be expecting updates. If you wish to continue using custom CSS, and do not care about PTT or Game Detection, continue using Discord-Linux.
 
 
 [Canary announcement](https://www.reddit.com/r/discordapp/comments/4bu7lm/discord_linux_very_experimental_canary_release/)
@@ -10,15 +9,8 @@ I will still be offering support for this version, but don't be expecting update
 
 Discord-Linux is a wrapper for [DiscordApp](http://discordapp.com/). This was made for those who would like to run Discord under it's own program on Linux. There are two different flavours of Discord-Linux; x86 (32bit) and x64 (64bit).
 
-At the moment it is in a very simple state and will be updated frequently. If you find any issues, write it up in the issues tab and I'll see what I can do. 
+### If you have any questions, feel free to drop by the Discord channel : https://discord.gg/0XKEBLSe6cdvBgWo
 
-
-### If you have any questions or need support, feel free to drop by the Discord channel : https://discord.gg/0XKEBLSe6cdvBgWo
----
-
-## TODO
-
-**Nothing**. If you have a suggestion, feel free to drop by the Discord channel and voice it!
 ---
 
 ## FAQ
@@ -29,7 +21,7 @@ A : **Make sure you check your settings and enable notices. Most of the time, on
 
 Q : How come Push to Talk doesn't work?
 
-A : **Unfortunately, Discord-Linux isn't as full featured as official clients, which means it will mostly act like the web version of Discord. So that means no full Push to Talk support. YET. I have been working on ways to implement full PTT support. Stay tuned for updates on this.**
+A : **Unfortunately, Discord-Linux isn't as full featured as official clients, which means it will mostly act like the web version of Discord. So that means no full Push to Talk support.**
 
 Q : How do I make / enable custom themes?
 
