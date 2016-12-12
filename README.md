@@ -4,6 +4,8 @@
 
 [Canary announcement](https://www.reddit.com/r/discordapp/comments/4bu7lm/discord_linux_very_experimental_canary_release/)
 
+[Canary download URL](https://discordapp.com/api/download/canary?platform=linux)
+
 # Discord-Linux
 ## An electron wrapper for DiscordApp!
 
