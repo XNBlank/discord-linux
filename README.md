@@ -11,7 +11,7 @@
 
 Discord-Linux is a wrapper for [DiscordApp](http://discordapp.com/). This was made for those who would like to run Discord under it's own program on Linux. There are two different flavours of Discord-Linux; x86 (32bit) and x64 (64bit).
 
-### If you have any questions, feel free to drop by the Discord channel : https://discord.gg/0XKEBLSe6cdvBgWo
+### If you have any questions, feel free to drop by the Discord channel : ![https://discord.gg/discord-linux](https://discordapp.com/api/guilds/96230004047740928/embed.png?style=banner2)
 
 ---
 
